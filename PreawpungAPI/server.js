@@ -512,8 +512,8 @@ app.get('/sendemail/:email', function(req, res) {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'domelaz2556@gmail.com',
-            pass: 'Dome383-4'
+            user: 'xxxxxx@gmail.com',
+            pass: 'xxxxxxx'
         }
     });
 
