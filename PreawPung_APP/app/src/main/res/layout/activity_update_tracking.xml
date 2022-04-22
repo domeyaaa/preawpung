@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".EmpCheckDetailActivity">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:paddingLeft="-20dp"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="รายละเอียดคำสั่งซื้อ"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="หมายเลขคำสั่งซื้อ : xxx"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderDetailView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_id"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="-30dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderDetailView"
+        android:layout_marginBottom="5dp"
+        android:text="ชื่อ-สกุล"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametxt"
+        android:layout_marginBottom="5dp"
+        android:text="เบอร์ติดต่อ"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addresstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teltxt"
+
+        android:layout_marginBottom="5dp"
+        android:text="ที่อยู่ \n\n\n"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totaltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addresstxt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="จำนวนเงินที่โอน"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/banktxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totaltxt"
+        android:layout_marginBottom="5dp"
+        android:text="ธนาคาร"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/numbanktxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banktxt"
+        android:layout_marginBottom="5dp"
+        android:text="เลขบัญชี (4 หลักสุดท้าย)"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/acc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderDetailView"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:text="xxxxxxxxxx"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/acc_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:text="xxxxxx"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/acc_address"
+        android:layout_width="194dp"
+        android:layout_height="87dp"
+        android:layout_below="@+id/acc_tel"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/slip_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc_address"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:text="฿xxxxx"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/slip_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slip_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:text="xxxx"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/slip_bank_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slip_bank"
+        android:layout_alignParentRight="true"
+        android:text="xxxxx"
+        android:textSize="16dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/login_btn"
+        android:text="ยืนยัน"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numbanktxt"
+        android:text="วันเวลาที่โอน"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/slip_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slip_bank_number"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="xxxxx"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/trackingEDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="อัปเดตเลขแทร็ก"
+        android:layout_above="@+id/confirm_btn"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/reg_btn"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ffcc79"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>

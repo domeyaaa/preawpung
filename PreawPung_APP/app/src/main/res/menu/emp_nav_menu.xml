@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_check"
+        android:icon="@drawable/check_icon"
+        android:title="ตรวจสอบ" />
+    <item
+        android:id="@+id/ic_track"
+        android:icon="@drawable/box_icon"
+        android:title="แทร็ก" />
+    <item
+        android:id="@+id/ic_history"
+        android:icon="@drawable/history_icon"
+        android:title="ประวัติ" />
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/profile_icon"
+        android:title="โปรไฟล์" />
+</menu>

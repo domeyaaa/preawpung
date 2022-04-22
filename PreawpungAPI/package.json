@@ -1,0 +1,24 @@
+{
+  "name": "preawpungapi",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "cryptr": "^6.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "md5": "^2.3.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.6.5"
+  },
+  "description": ""
+}

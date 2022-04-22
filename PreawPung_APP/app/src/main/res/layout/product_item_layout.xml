@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemCard"
+        android:layout_width="160dp"
+        android:layout_height="225dp"
+        app:cardBackgroundColor="#f4f4f4"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingTop="10dp"
+                android:id="@+id/imageProductCard"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:src="@drawable/product1"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/nameProductCard"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@+id/imageProductCard"
+                android:textColor="#826c5f"
+                android:textSize="17sp"
+                android:text="ชื่อสินค้า"/>
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/priceProductCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#826c5f"
+                android:text="ราคา" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

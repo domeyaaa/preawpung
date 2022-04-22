@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ลงทะเบียน"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="#826c5f"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nameREG"
+            android:text="ชื่อ - สกุล"
+            android:textColor="#826c5f"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/nameREG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/regEmailtxt"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/login_input"
+            android:padding="10dp"
+            android:textColor="#826c5f" />
+
+        <TextView
+            android:id="@+id/regEmailtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/emailREG"
+            android:text="อีเมล"
+            android:textColor="#826c5f"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emailREG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/regUsernametxt"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/login_input"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="#826c5f" />
+
+        <TextView
+            android:id="@+id/regUsernametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/usernameREG"
+            android:layout_marginTop="3dp"
+            android:text="ชื่อผู้ใช้"
+            android:textColor="#826c5f"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/usernameREG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/regPass1txt"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/login_input"
+            android:padding="10dp"
+            android:textColor="#826c5f" />
+
+        <TextView
+            android:id="@+id/regPass1txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="3dp"
+            android:text="รหัสผ่าน"
+            android:textColor="#826c5f"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password1REG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regPass1txt"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/login_input"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#826c5f" />
+
+        <TextView
+            android:id="@+id/regPass2txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password1REG"
+            android:layout_marginTop="3dp"
+            android:text="ยืนยันรหัสผ่าน"
+            android:textColor="#826c5f"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password2REG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regPass2txt"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/login_input"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#826c5f" />
+
+        <TextView
+            android:id="@+id/birthdaytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password2REG"
+            android:text="วันเกิด"
+            android:textColor="#826c5f"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/birthdayREG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/birthdaytxt"
+            android:layout_marginTop="10dp"
+            android:text="ปปปป-ดด-วว"
+            android:textColor="#826c5f"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/birthdayBtn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/birthdaytxt"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/login_btn"
+            android:drawableLeft="@drawable/date_icon"
+            android:onClick="showDatePickerDialog"
+            android:paddingLeft="17dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/birthdayREG"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/gendertxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เพศ"
+                android:textColor="#826c5f"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/gendertxt"
+                android:orientation="horizontal"
+                android:textColor="#826c5f">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ชาย"
+                    android:textColor="#826c5f"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="หญิง"
+                    android:textColor="#826c5f"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gen"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/login_btn"
+            android:onClick="register"
+            android:text="สมัครใช้งาน"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

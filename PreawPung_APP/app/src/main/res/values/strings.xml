@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PreawPung</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="formatted_time">%02d:%02d นาที</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">หน้าหลัก</string>
+    <string name="cart">ตะกร้า</string>
+    <string name="history">ประวัติ</string>
+    <string name="profile">โปรไฟล์</string>
+    <string-array name="bankName_array">
+        <item>ไทยพาณิชย์</item>
+        <item>กสิกรไทย</item>
+        <item>กรุงไทย</item>
+        <item>กรุงเทพ</item>
+        <item>ทีทีบี</item>
+        <item>ออมสิน</item>
+        <item>กรุงศรี</item>
+        <item>ธ.ก.ส.</item>
+        <item>ยูโอบี</item>
+        <item>อาคารสงเคราะห์</item>
+        <item>ซีไอเอ็มบี</item>
+        <item>ซิตี้แบงก์</item>
+    </string-array>
+</resources>

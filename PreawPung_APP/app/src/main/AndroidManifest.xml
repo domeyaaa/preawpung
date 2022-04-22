@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.preawpung">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_pp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_pp_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PreawPung"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".NewPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OtpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SendEmailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NecklaceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BangleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EmpHisDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShowSlipActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SendSlipActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EmpCheckDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EmpEditprofileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EmpHomeActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".UpdateTrackingActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CartProductDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OrderDetailActivity"
+            android:noHistory="true" />
+        <activity android:name=".AddProductActivity" />
+        <activity android:name=".EditprofileActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:noHistory="true" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/itemProductDetailImg"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/product1" />
+
+    <TextView
+        android:id="@+id/itemProductDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemProductDetailImg"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Product Name"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemProductDetailNumTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemProductDetailName"
+        android:layout_marginLeft="30dp"
+        android:text="จำนวนสินค้า"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemProductDetailAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemProductDetailName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="X 11"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemProductDetailNumTxt"
+        android:layout_marginLeft="30dp"
+        android:text="ราคาต่อชิ้น"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemProductDetailPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemProductDetailAmount"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="฿xxx"
+        android:textSize="16sp" />
+
+</RelativeLayout>

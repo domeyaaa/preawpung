@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "214207632397",
+    "project_id": "preawpung-14128",
+    "storage_bucket": "preawpung-14128.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214207632397:android:164286ba5cddbcffacf144",
+        "android_client_info": {
+          "package_name": "com.example.preawpung"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214207632397-p6tne8dg4cbhiglhf0btm2a0euvh19fi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu2mwxqOFomoi3JFaDruxM0IYXMn0Ed_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214207632397-p6tne8dg4cbhiglhf0btm2a0euvh19fi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

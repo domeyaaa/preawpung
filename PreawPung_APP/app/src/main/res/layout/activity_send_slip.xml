@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/slip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="10dp"
+        android:text="ส่งหลักฐานการชำระเงิน"
+        android:textColor="#826c5f"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/headLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.85dp"
+        android:layout_below="@id/slip_tv"
+        android:layout_marginTop="20sp"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/sumPrice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headLine"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="ยอดชำระเงินทั้งหมด"
+        android:textColor="#826c5f"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sumPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headLine"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingRight="10sp"
+        android:text="฿xxxxxx"
+        android:textColor="#ffcc79"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.85dp"
+        android:layout_below="@id/sumPrice_tv"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/bank1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="ไทยพาณิชย์ (SCB)"
+        android:textColor="#826c5f"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bank2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bank1_tv"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="5dp"
+        android:text="ชื่อบัญชี : "
+        android:textColor="#826c5f"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bank3_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bank1_tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/bank2_tv"
+        android:text="บริษัท กรมะณี เกศแผง จำกัด"
+        android:textColor="#826c5f"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/bank4_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bank2_tv"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="5dp"
+        android:text="เลขบัญชี : "
+        android:textColor="#826c5f"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bankNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bank2_tv"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/bank4_tv"
+        android:text="123 456 7890"
+        android:textColor="#826c5f"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/copy"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/bank2_tv"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@id/bankNum"
+        android:background="@color/white"
+        android:text="คัดลอก"
+        android:textColor="#FFCC79"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/in24hr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/bank4_tv"
+        android:layout_marginTop="15dp"
+        android:background="#F8F8F8"
+        android:gravity="center"
+        android:text="กรุุณาส่งหลักฐานการชำระเงินภายใน 24 ชั่วโมง"
+        android:textColor="#826c5f"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/uploadHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in24hr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="อัปโหลดหลักฐานการชำระเงิน"
+        android:textColor="#826c5f"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/uploadPic"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/uploadHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/add_slip_border"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_cloud_upload_24" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.85dp"
+        android:layout_below="@id/uploadPic"
+        android:layout_marginTop="10dp"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/fromBank_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:text="โอนจากธนาคาร"
+        android:textColor="#826c5f"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/chooseBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/trasferPrice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromBank_tv"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:text="จำนวนเงินที่โอน"
+        android:textColor="#826c5f"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtTransferPrice"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/fromBank_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/slip_edt_border"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10sp"
+        android:textColor="#FFCC79"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/last4num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trasferPrice_tv"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:text="โอนจากเลขที่บัญชี (4 หลักสุดท้าย)"
+        android:textColor="#826c5f"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtLast4num"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/trasferPrice_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/slip_edt_border"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10sp"
+        android:textColor="#FFCC79"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/transferDate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last4num_tv"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:text="วันที่โอน"
+        android:textColor="#826c5f"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last4num_tv"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/date"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:onClick="showDatePicker"
+        android:src="@drawable/ic_baseline_date_range_24" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last4num_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:text="ปปปป-ดด-วว"
+        android:textColor="#ffcc79"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/transferTime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transferDate_tv"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:text="เวลาที่โอน"
+        android:textColor="#826c5f"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transferDate_tv"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/white"
+        android:onClick="showTimePicker"
+        android:src="@drawable/ic_baseline_access_time_24" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transferDate_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:text="00:00"
+        android:textColor="#ffcc79"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.85dp"
+        android:layout_below="@id/transferTime_tv"
+        android:layout_marginTop="10dp"
+        android:background="#fff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_btn"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="ส่งหลักฐานการชำระเงิน"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
